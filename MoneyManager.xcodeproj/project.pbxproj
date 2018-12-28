@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */; };
+		43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112121D5BD2400EF6893 /* AppDelegate.m */; };
+		43E2112521D5BD2400EF6893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112421D5BD2400EF6893 /* ViewController.m */; };
+		43E2112821D5BD2400EF6893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112621D5BD2400EF6893 /* Main.storyboard */; };
+		43E2112A21D5BD2600EF6893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112921D5BD2600EF6893 /* Assets.xcassets */; };
+		43E2112D21D5BD2600EF6893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */; };
+		43E2113021D5BD2600EF6893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112F21D5BD2600EF6893 /* main.m */; };
+		43E2113A21D5BD2600EF6893 /* MoneyManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2113921D5BD2600EF6893 /* MoneyManagerTests.m */; };
+		43E2114521D5BD2600EF6893 /* MoneyManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2114421D5BD2600EF6893 /* MoneyManagerUITests.m */; };
+		43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2115321D5BF2A00EF6893 /* RLBaseViewController.m */; };
+		43E2115921D5BF9200EF6893 /* RLBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2115821D5BF9200EF6893 /* RLBaseTheme.m */; };
+		43E2115E21D5C4D200EF6893 /* RLBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2115D21D5C4D200EF6893 /* RLBaseNavigationController.m */; };
+		43E2116421D5C58500EF6893 /* RLBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2116321D5C58500EF6893 /* RLBaseTabBarController.m */; };
+		43E2117421D5E64F00EF6893 /* RLSpendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2117321D5E64F00EF6893 /* RLSpendingViewController.m */; };
+		43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2117621D5E66D00EF6893 /* RLIncomeViewController.m */; };
+		43E2117A21D5E67F00EF6893 /* RLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2117921D5E67F00EF6893 /* RLSettingViewController.m */; };
+		B85E299A559A8E0B584973B2 /* libPods-MoneyManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F130A6452D305792B3E4 /* libPods-MoneyManagerTests.a */; };
+		EB83CEE1F476A5ADF3438EC7 /* libPods-MoneyManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D126D3E62EF9E507FB36AC /* libPods-MoneyManagerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E2113621D5BD2600EF6893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E2111521D5BD2400EF6893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E2111C21D5BD2400EF6893;
+			remoteInfo = MoneyManager;
+		};
+		43E2114121D5BD2600EF6893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E2111521D5BD2400EF6893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E2111C21D5BD2400EF6893;
+			remoteInfo = MoneyManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FAFA8017E9F9D6794CC1FFF /* Pods-MoneyManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40DF12E83F615DF49548CA68 /* Pods-MoneyManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43E2111D21D5BD2400EF6893 /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E2112021D5BD2400EF6893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43E2112121D5BD2400EF6893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43E2112321D5BD2400EF6893 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		43E2112421D5BD2400EF6893 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		43E2112721D5BD2400EF6893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43E2112921D5BD2600EF6893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43E2112C21D5BD2600EF6893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43E2112E21D5BD2600EF6893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E2112F21D5BD2600EF6893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43E2113521D5BD2600EF6893 /* MoneyManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E2113921D5BD2600EF6893 /* MoneyManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerTests.m; sourceTree = "<group>"; };
+		43E2113B21D5BD2600EF6893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E2114021D5BD2600EF6893 /* MoneyManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E2114421D5BD2600EF6893 /* MoneyManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyManagerUITests.m; sourceTree = "<group>"; };
+		43E2114621D5BD2600EF6893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E2115221D5BF2A00EF6893 /* RLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLBaseViewController.h; sourceTree = "<group>"; };
+		43E2115321D5BF2A00EF6893 /* RLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLBaseViewController.m; sourceTree = "<group>"; };
+		43E2115721D5BF9200EF6893 /* RLBaseTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLBaseTheme.h; sourceTree = "<group>"; };
+		43E2115821D5BF9200EF6893 /* RLBaseTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLBaseTheme.m; sourceTree = "<group>"; };
+		43E2115A21D5C09100EF6893 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		43E2115C21D5C4D200EF6893 /* RLBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLBaseNavigationController.h; sourceTree = "<group>"; };
+		43E2115D21D5C4D200EF6893 /* RLBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLBaseNavigationController.m; sourceTree = "<group>"; };
+		43E2116221D5C58500EF6893 /* RLBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLBaseTabBarController.h; sourceTree = "<group>"; };
+		43E2116321D5C58500EF6893 /* RLBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLBaseTabBarController.m; sourceTree = "<group>"; };
+		43E2117221D5E64F00EF6893 /* RLSpendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSpendingViewController.h; sourceTree = "<group>"; };
+		43E2117321D5E64F00EF6893 /* RLSpendingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLSpendingViewController.m; sourceTree = "<group>"; };
+		43E2117521D5E66D00EF6893 /* RLIncomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLIncomeViewController.h; sourceTree = "<group>"; };
+		43E2117621D5E66D00EF6893 /* RLIncomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLIncomeViewController.m; sourceTree = "<group>"; };
+		43E2117821D5E67F00EF6893 /* RLSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSettingViewController.h; sourceTree = "<group>"; };
+		43E2117921D5E67F00EF6893 /* RLSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLSettingViewController.m; sourceTree = "<group>"; };
+		5B63EAB5BBFD8FA7D2FA9523 /* Pods-MoneyManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerTests/Pods-MoneyManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		76D126D3E62EF9E507FB36AC /* libPods-MoneyManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E77112E964055AC9AC055D8 /* Pods-MoneyManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManager/Pods-MoneyManager.release.xcconfig"; sourceTree = "<group>"; };
+		BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C449F130A6452D305792B3E4 /* libPods-MoneyManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneyManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C4DE550F8A353193EC3EDA /* Pods-MoneyManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManager/Pods-MoneyManager.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E3C49DB2B2D64337A379F2 /* Pods-MoneyManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerTests/Pods-MoneyManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E2111A21D5BD2400EF6893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113221D5BD2600EF6893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85E299A559A8E0B584973B2 /* libPods-MoneyManagerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113D21D5BD2600EF6893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB83CEE1F476A5ADF3438EC7 /* libPods-MoneyManagerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43E2111421D5BD2400EF6893 = {
+			isa = PBXGroup;
+			children = (
+				43E2111F21D5BD2400EF6893 /* MoneyManager */,
+				43E2113821D5BD2600EF6893 /* MoneyManagerTests */,
+				43E2114321D5BD2600EF6893 /* MoneyManagerUITests */,
+				43E2111E21D5BD2400EF6893 /* Products */,
+				A867C1DE00D10D23303FD85A /* Pods */,
+				E1C0E6CD03AB67BCB3100941 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43E2111E21D5BD2400EF6893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E2111D21D5BD2400EF6893 /* MoneyManager.app */,
+				43E2113521D5BD2600EF6893 /* MoneyManagerTests.xctest */,
+				43E2114021D5BD2600EF6893 /* MoneyManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E2111F21D5BD2400EF6893 /* MoneyManager */ = {
+			isa = PBXGroup;
+			children = (
+				43E2116521D5E56400EF6893 /* Business */,
+				43E2115B21D5C14E00EF6893 /* Header */,
+				43E2115621D5BF6900EF6893 /* Theme */,
+				43E2115521D5BF3700EF6893 /* Base */,
+				43E2112021D5BD2400EF6893 /* AppDelegate.h */,
+				43E2112121D5BD2400EF6893 /* AppDelegate.m */,
+				43E2112321D5BD2400EF6893 /* ViewController.h */,
+				43E2112421D5BD2400EF6893 /* ViewController.m */,
+				43E2112621D5BD2400EF6893 /* Main.storyboard */,
+				43E2112921D5BD2600EF6893 /* Assets.xcassets */,
+				43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */,
+				43E2112E21D5BD2600EF6893 /* Info.plist */,
+				43E2112F21D5BD2600EF6893 /* main.m */,
+			);
+			path = MoneyManager;
+			sourceTree = "<group>";
+		};
+		43E2113821D5BD2600EF6893 /* MoneyManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				43E2113921D5BD2600EF6893 /* MoneyManagerTests.m */,
+				43E2113B21D5BD2600EF6893 /* Info.plist */,
+			);
+			path = MoneyManagerTests;
+			sourceTree = "<group>";
+		};
+		43E2114321D5BD2600EF6893 /* MoneyManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43E2114421D5BD2600EF6893 /* MoneyManagerUITests.m */,
+				43E2114621D5BD2600EF6893 /* Info.plist */,
+			);
+			path = MoneyManagerUITests;
+			sourceTree = "<group>";
+		};
+		43E2115521D5BF3700EF6893 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				43E2115221D5BF2A00EF6893 /* RLBaseViewController.h */,
+				43E2115321D5BF2A00EF6893 /* RLBaseViewController.m */,
+				43E2116221D5C58500EF6893 /* RLBaseTabBarController.h */,
+				43E2116321D5C58500EF6893 /* RLBaseTabBarController.m */,
+				43E2115C21D5C4D200EF6893 /* RLBaseNavigationController.h */,
+				43E2115D21D5C4D200EF6893 /* RLBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		43E2115621D5BF6900EF6893 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				43E2115721D5BF9200EF6893 /* RLBaseTheme.h */,
+				43E2115821D5BF9200EF6893 /* RLBaseTheme.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		43E2115B21D5C14E00EF6893 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				43E2115A21D5C09100EF6893 /* PrefixHeader.pch */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		43E2116521D5E56400EF6893 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				43E2116821D5E5A900EF6893 /* Setting */,
+				43E2116721D5E5A000EF6893 /* Income */,
+				43E2116621D5E58100EF6893 /* Spending */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		43E2116621D5E58100EF6893 /* Spending */ = {
+			isa = PBXGroup;
+			children = (
+				43E2116B21D5E5D200EF6893 /* View */,
+				43E2116A21D5E5CC00EF6893 /* Model */,
+				43E2116921D5E5BE00EF6893 /* ViewController */,
+			);
+			path = Spending;
+			sourceTree = "<group>";
+		};
+		43E2116721D5E5A000EF6893 /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				43E2116E21D5E5E900EF6893 /* View */,
+				43E2116D21D5E5E300EF6893 /* Model */,
+				43E2116C21D5E5D800EF6893 /* ViewController */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		43E2116821D5E5A900EF6893 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				43E2117121D5E5FE00EF6893 /* ViewController */,
+				43E2117021D5E5F800EF6893 /* Model */,
+				43E2116F21D5E5F100EF6893 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		43E2116921D5E5BE00EF6893 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43E2117221D5E64F00EF6893 /* RLSpendingViewController.h */,
+				43E2117321D5E64F00EF6893 /* RLSpendingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		43E2116A21D5E5CC00EF6893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43E2116B21D5E5D200EF6893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43E2116C21D5E5D800EF6893 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43E2117521D5E66D00EF6893 /* RLIncomeViewController.h */,
+				43E2117621D5E66D00EF6893 /* RLIncomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		43E2116D21D5E5E300EF6893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43E2116E21D5E5E900EF6893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43E2116F21D5E5F100EF6893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43E2117021D5E5F800EF6893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43E2117121D5E5FE00EF6893 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43E2117821D5E67F00EF6893 /* RLSettingViewController.h */,
+				43E2117921D5E67F00EF6893 /* RLSettingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A867C1DE00D10D23303FD85A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5C4DE550F8A353193EC3EDA /* Pods-MoneyManager.debug.xcconfig */,
+				7E77112E964055AC9AC055D8 /* Pods-MoneyManager.release.xcconfig */,
+				F2E3C49DB2B2D64337A379F2 /* Pods-MoneyManagerTests.debug.xcconfig */,
+				5B63EAB5BBFD8FA7D2FA9523 /* Pods-MoneyManagerTests.release.xcconfig */,
+				40DF12E83F615DF49548CA68 /* Pods-MoneyManagerUITests.debug.xcconfig */,
+				2FAFA8017E9F9D6794CC1FFF /* Pods-MoneyManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1C0E6CD03AB67BCB3100941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */,
+				C449F130A6452D305792B3E4 /* libPods-MoneyManagerTests.a */,
+				76D126D3E62EF9E507FB36AC /* libPods-MoneyManagerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E2111C21D5BD2400EF6893 /* MoneyManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E2114921D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManager" */;
+			buildPhases = (
+				5D7D3B104DAE02B1CB12F17C /* [CP] Check Pods Manifest.lock */,
+				43E2111921D5BD2400EF6893 /* Sources */,
+				43E2111A21D5BD2400EF6893 /* Frameworks */,
+				43E2111B21D5BD2400EF6893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyManager;
+			productName = MoneyManager;
+			productReference = 43E2111D21D5BD2400EF6893 /* MoneyManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43E2113421D5BD2600EF6893 /* MoneyManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E2114C21D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManagerTests" */;
+			buildPhases = (
+				E31DA10C5BDDA4D508D105A4 /* [CP] Check Pods Manifest.lock */,
+				43E2113121D5BD2600EF6893 /* Sources */,
+				43E2113221D5BD2600EF6893 /* Frameworks */,
+				43E2113321D5BD2600EF6893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E2113721D5BD2600EF6893 /* PBXTargetDependency */,
+			);
+			name = MoneyManagerTests;
+			productName = MoneyManagerTests;
+			productReference = 43E2113521D5BD2600EF6893 /* MoneyManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43E2113F21D5BD2600EF6893 /* MoneyManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E2114F21D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManagerUITests" */;
+			buildPhases = (
+				3CA21D6B0CDEE18678A2CD20 /* [CP] Check Pods Manifest.lock */,
+				43E2113C21D5BD2600EF6893 /* Sources */,
+				43E2113D21D5BD2600EF6893 /* Frameworks */,
+				43E2113E21D5BD2600EF6893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E2114221D5BD2600EF6893 /* PBXTargetDependency */,
+			);
+			name = MoneyManagerUITests;
+			productName = MoneyManagerUITests;
+			productReference = 43E2114021D5BD2600EF6893 /* MoneyManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E2111521D5BD2400EF6893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = RiverLi;
+				TargetAttributes = {
+					43E2111C21D5BD2400EF6893 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					43E2113421D5BD2600EF6893 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 43E2111C21D5BD2400EF6893;
+					};
+					43E2113F21D5BD2600EF6893 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 43E2111C21D5BD2400EF6893;
+					};
+				};
+			};
+			buildConfigurationList = 43E2111821D5BD2400EF6893 /* Build configuration list for PBXProject "MoneyManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43E2111421D5BD2400EF6893;
+			productRefGroup = 43E2111E21D5BD2400EF6893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E2111C21D5BD2400EF6893 /* MoneyManager */,
+				43E2113421D5BD2600EF6893 /* MoneyManagerTests */,
+				43E2113F21D5BD2600EF6893 /* MoneyManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E2111B21D5BD2400EF6893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2112D21D5BD2600EF6893 /* LaunchScreen.storyboard in Resources */,
+				43E2112A21D5BD2600EF6893 /* Assets.xcassets in Resources */,
+				43E2112821D5BD2400EF6893 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113321D5BD2600EF6893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113E21D5BD2600EF6893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CA21D6B0CDEE18678A2CD20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7D3B104DAE02B1CB12F17C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31DA10C5BDDA4D508D105A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E2111921D5BD2400EF6893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2116421D5C58500EF6893 /* RLBaseTabBarController.m in Sources */,
+				43E2115E21D5C4D200EF6893 /* RLBaseNavigationController.m in Sources */,
+				43E2117421D5E64F00EF6893 /* RLSpendingViewController.m in Sources */,
+				43E2112521D5BD2400EF6893 /* ViewController.m in Sources */,
+				43E2115921D5BF9200EF6893 /* RLBaseTheme.m in Sources */,
+				43E2117A21D5E67F00EF6893 /* RLSettingViewController.m in Sources */,
+				43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */,
+				43E2113021D5BD2600EF6893 /* main.m in Sources */,
+				43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */,
+				43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113121D5BD2600EF6893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2113A21D5BD2600EF6893 /* MoneyManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E2113C21D5BD2600EF6893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2114521D5BD2600EF6893 /* MoneyManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43E2113721D5BD2600EF6893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E2111C21D5BD2400EF6893 /* MoneyManager */;
+			targetProxy = 43E2113621D5BD2600EF6893 /* PBXContainerItemProxy */;
+		};
+		43E2114221D5BD2600EF6893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E2111C21D5BD2400EF6893 /* MoneyManager */;
+			targetProxy = 43E2114121D5BD2600EF6893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43E2112621D5BD2400EF6893 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E2112721D5BD2400EF6893 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E2112C21D5BD2600EF6893 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43E2114721D5BD2600EF6893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43E2114821D5BD2600EF6893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43E2114A21D5BD2600EF6893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C4DE550F8A353193EC3EDA /* Pods-MoneyManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MoneyManager/Header/PrefixHeader.pch";
+				INFOPLIST_FILE = MoneyManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43E2114B21D5BD2600EF6893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E77112E964055AC9AC055D8 /* Pods-MoneyManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MoneyManager/Header/PrefixHeader.pch";
+				INFOPLIST_FILE = MoneyManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43E2114D21D5BD2600EF6893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E3C49DB2B2D64337A379F2 /* Pods-MoneyManagerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyManager.app/MoneyManager";
+			};
+			name = Debug;
+		};
+		43E2114E21D5BD2600EF6893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B63EAB5BBFD8FA7D2FA9523 /* Pods-MoneyManagerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyManager.app/MoneyManager";
+			};
+			name = Release;
+		};
+		43E2115021D5BD2600EF6893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DF12E83F615DF49548CA68 /* Pods-MoneyManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyManager;
+			};
+			name = Debug;
+		};
+		43E2115121D5BD2600EF6893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FAFA8017E9F9D6794CC1FFF /* Pods-MoneyManagerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E2111821D5BD2400EF6893 /* Build configuration list for PBXProject "MoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E2114721D5BD2600EF6893 /* Debug */,
+				43E2114821D5BD2600EF6893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E2114921D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E2114A21D5BD2600EF6893 /* Debug */,
+				43E2114B21D5BD2600EF6893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E2114C21D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E2114D21D5BD2600EF6893 /* Debug */,
+				43E2114E21D5BD2600EF6893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E2114F21D5BD2600EF6893 /* Build configuration list for PBXNativeTarget "MoneyManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E2115021D5BD2600EF6893 /* Debug */,
+				43E2115121D5BD2600EF6893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E2111521D5BD2400EF6893 /* Project object */;
+}
