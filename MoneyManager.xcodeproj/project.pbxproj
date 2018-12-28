@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */; };
+		432ED1CB21D6686B00475C10 /* RLAddSpendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1CA21D6686B00475C10 /* RLAddSpendingViewController.m */; };
 		438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */; };
 		43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112121D5BD2400EF6893 /* AppDelegate.m */; };
 		43E2112521D5BD2400EF6893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112421D5BD2400EF6893 /* ViewController.m */; };
@@ -47,6 +49,10 @@
 /* Begin PBXFileReference section */
 		2FAFA8017E9F9D6794CC1FFF /* Pods-MoneyManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40DF12E83F615DF49548CA68 /* Pods-MoneyManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		432ED1C621D6662200475C10 /* RLGlobalDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGlobalDataCenter.h; sourceTree = "<group>"; };
+		432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGlobalDataCenter.m; sourceTree = "<group>"; };
+		432ED1C921D6686B00475C10 /* RLAddSpendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLAddSpendingViewController.h; sourceTree = "<group>"; };
+		432ED1CA21D6686B00475C10 /* RLAddSpendingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLAddSpendingViewController.m; sourceTree = "<group>"; };
 		43E2111D21D5BD2400EF6893 /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E2112021D5BD2400EF6893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43E2112121D5BD2400EF6893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +121,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432ED1CC21D66E4900475C10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		432ED1CD21D66E4900475C10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		43E2111421D5BD2400EF6893 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +231,8 @@
 				43E2116821D5E5A900EF6893 /* Setting */,
 				43E2116721D5E5A000EF6893 /* Income */,
 				43E2116621D5E58100EF6893 /* Spending */,
+				432ED1C621D6662200475C10 /* RLGlobalDataCenter.h */,
+				432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -218,8 +240,8 @@
 		43E2116621D5E58100EF6893 /* Spending */ = {
 			isa = PBXGroup;
 			children = (
-				43E2116B21D5E5D200EF6893 /* View */,
-				43E2116A21D5E5CC00EF6893 /* Model */,
+				432ED1CD21D66E4900475C10 /* Model */,
+				432ED1CC21D66E4900475C10 /* View */,
 				43E2116921D5E5BE00EF6893 /* ViewController */,
 			);
 			path = Spending;
@@ -228,8 +250,6 @@
 		43E2116721D5E5A000EF6893 /* Income */ = {
 			isa = PBXGroup;
 			children = (
-				43E2116E21D5E5E900EF6893 /* View */,
-				43E2116D21D5E5E300EF6893 /* Model */,
 				43E2116C21D5E5D800EF6893 /* ViewController */,
 			);
 			path = Income;
@@ -239,8 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				43E2117121D5E5FE00EF6893 /* ViewController */,
-				43E2117021D5E5F800EF6893 /* Model */,
-				43E2116F21D5E5F100EF6893 /* View */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -250,22 +268,10 @@
 			children = (
 				43E2117221D5E64F00EF6893 /* RLSpendingViewController.h */,
 				43E2117321D5E64F00EF6893 /* RLSpendingViewController.m */,
+				432ED1C921D6686B00475C10 /* RLAddSpendingViewController.h */,
+				432ED1CA21D6686B00475C10 /* RLAddSpendingViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		43E2116A21D5E5CC00EF6893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		43E2116B21D5E5D200EF6893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		43E2116C21D5E5D800EF6893 /* ViewController */ = {
@@ -275,34 +281,6 @@
 				43E2117621D5E66D00EF6893 /* RLIncomeViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		43E2116D21D5E5E300EF6893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		43E2116E21D5E5E900EF6893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		43E2116F21D5E5F100EF6893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		43E2117021D5E5F800EF6893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		43E2117121D5E5FE00EF6893 /* ViewController */ = {
@@ -471,15 +449,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MoneyManagerUITests-checkManifestLockResult.txt",
 			);
@@ -493,15 +467,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MoneyManager-checkManifestLockResult.txt",
 			);
@@ -515,15 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MoneyManagerTests-checkManifestLockResult.txt",
 			);
@@ -546,8 +512,10 @@
 				43E2115921D5BF9200EF6893 /* RLBaseTheme.m in Sources */,
 				43E2117A21D5E67F00EF6893 /* RLSettingViewController.m in Sources */,
 				43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */,
+				432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */,
 				43E2113021D5BD2600EF6893 /* main.m in Sources */,
 				43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */,
+				432ED1CB21D6686B00475C10 /* RLAddSpendingViewController.m in Sources */,
 				43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

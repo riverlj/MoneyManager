@@ -19,4 +19,12 @@
     self.view.backgroundColor = [RLBaseTheme backgroundColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+}
+
 @end

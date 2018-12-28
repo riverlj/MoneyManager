@@ -14,7 +14,7 @@
 #import "RLSettingViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) RLBaseNavigationController *currentNav;
 @end
 
 @implementation AppDelegate
@@ -26,6 +26,7 @@
     self.window.backgroundColor = [RLBaseTheme backgroundColor];
     self.window.rootViewController = [self createRootVc];
     [self.window makeKeyAndVisible];
+    [RLGlobalDataCenter instanceGlobalDataCenter].unit = @"元";
     return YES;
 }
 
@@ -45,8 +46,22 @@
     spendingVc.title = @"支出";
     incomeVc.title = @"收入";
     settingVc.title = @"设置";
+
+    self.currentNav = spendingNav;
     
     return tabBar;
+}
+
+
+- (void)push:(UIViewController *)vc {
+    if (self.currentNav.viewControllers.count == 1) {
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    [self.currentNav pushViewController:vc animated:YES];
+}
+
+- (void)pop {
+    [self.currentNav popViewControllerAnimated:YES];
 }
 
 

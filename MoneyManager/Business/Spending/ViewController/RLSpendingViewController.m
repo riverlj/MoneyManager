@@ -7,6 +7,8 @@
 //
 
 #import "RLSpendingViewController.h"
+#import "RLAddSpendingViewController.h"
+#import "AppDelegate.h"
 
 @interface RLSpendingViewController ()
 
@@ -16,6 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *createButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [createButton setTitle:@"添加" forState:UIControlStateNormal];
+    [createButton setTitle:@"添加" forState:UIControlStateHighlighted];
+    [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+    [createButton addTarget:self action:@selector(gotoAddSpendingVc) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:createButton];
+}
+
+- (void)gotoAddSpendingVc {
+    RLAddSpendingViewController *addSpendingVc = [[RLAddSpendingViewController alloc] init];
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate push:addSpendingVc];
 }
 
 @end
