@@ -10,9 +10,11 @@
 		432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */; };
 		432ED1CB21D6686B00475C10 /* RLAddSpendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1CA21D6686B00475C10 /* RLAddSpendingViewController.m */; };
 		438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */; };
+		438F8A3C21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */; };
+		438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */; };
+		438F8A4721D7169800EF46DD /* Money+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4521D7169800EF46DD /* Money+CoreDataProperties.m */; };
+		438F8A4A21D7393000EF46DD /* RLDataBaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */; };
 		43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112121D5BD2400EF6893 /* AppDelegate.m */; };
-		43E2112521D5BD2400EF6893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112421D5BD2400EF6893 /* ViewController.m */; };
-		43E2112821D5BD2400EF6893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112621D5BD2400EF6893 /* Main.storyboard */; };
 		43E2112A21D5BD2600EF6893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112921D5BD2600EF6893 /* Assets.xcassets */; };
 		43E2112D21D5BD2600EF6893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */; };
 		43E2113021D5BD2600EF6893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112F21D5BD2600EF6893 /* main.m */; };
@@ -53,12 +55,16 @@
 		432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGlobalDataCenter.m; sourceTree = "<group>"; };
 		432ED1C921D6686B00475C10 /* RLAddSpendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLAddSpendingViewController.h; sourceTree = "<group>"; };
 		432ED1CA21D6686B00475C10 /* RLAddSpendingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLAddSpendingViewController.m; sourceTree = "<group>"; };
+		438F8A3B21D713DF00EF46DD /* MoneyDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyDataBase.xcdatamodel; sourceTree = "<group>"; };
+		438F8A4221D7169800EF46DD /* Money+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataProperties.h"; sourceTree = "<group>"; };
+		438F8A4321D7169800EF46DD /* Money+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataClass.h"; sourceTree = "<group>"; };
+		438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Money+CoreDataClass.m"; sourceTree = "<group>"; };
+		438F8A4521D7169800EF46DD /* Money+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Money+CoreDataProperties.m"; sourceTree = "<group>"; };
+		438F8A4821D7393000EF46DD /* RLDataBaseUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLDataBaseUtil.h; sourceTree = "<group>"; };
+		438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLDataBaseUtil.m; sourceTree = "<group>"; };
 		43E2111D21D5BD2400EF6893 /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E2112021D5BD2400EF6893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43E2112121D5BD2400EF6893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43E2112321D5BD2400EF6893 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		43E2112421D5BD2400EF6893 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		43E2112721D5BD2400EF6893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E2112921D5BD2600EF6893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E2112C21D5BD2600EF6893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E2112E21D5BD2600EF6893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +141,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		438F8A3621D712BA00EF46DD /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				438F8A4221D7169800EF46DD /* Money+CoreDataProperties.h */,
+				438F8A4321D7169800EF46DD /* Money+CoreDataClass.h */,
+				438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */,
+				438F8A4521D7169800EF46DD /* Money+CoreDataProperties.m */,
+				438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */,
+				438F8A4821D7393000EF46DD /* RLDataBaseUtil.h */,
+				438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 		43E2111421D5BD2400EF6893 = {
 			isa = PBXGroup;
 			children = (
@@ -166,9 +186,6 @@
 				43E2115521D5BF3700EF6893 /* Base */,
 				43E2112021D5BD2400EF6893 /* AppDelegate.h */,
 				43E2112121D5BD2400EF6893 /* AppDelegate.m */,
-				43E2112321D5BD2400EF6893 /* ViewController.h */,
-				43E2112421D5BD2400EF6893 /* ViewController.m */,
-				43E2112621D5BD2400EF6893 /* Main.storyboard */,
 				43E2112921D5BD2600EF6893 /* Assets.xcassets */,
 				43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */,
 				43E2112E21D5BD2600EF6893 /* Info.plist */,
@@ -228,6 +245,7 @@
 		43E2116521D5E56400EF6893 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				438F8A3621D712BA00EF46DD /* DataBase */,
 				43E2116821D5E5A900EF6893 /* Setting */,
 				43E2116721D5E5A000EF6893 /* Income */,
 				43E2116621D5E58100EF6893 /* Spending */,
@@ -385,6 +403,7 @@
 				TargetAttributes = {
 					43E2111C21D5BD2400EF6893 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					43E2113421D5BD2600EF6893 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -423,7 +442,6 @@
 			files = (
 				43E2112D21D5BD2600EF6893 /* LaunchScreen.storyboard in Resources */,
 				43E2112A21D5BD2600EF6893 /* Assets.xcassets in Resources */,
-				43E2112821D5BD2400EF6893 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,8 +526,10 @@
 				43E2116421D5C58500EF6893 /* RLBaseTabBarController.m in Sources */,
 				43E2115E21D5C4D200EF6893 /* RLBaseNavigationController.m in Sources */,
 				43E2117421D5E64F00EF6893 /* RLSpendingViewController.m in Sources */,
-				43E2112521D5BD2400EF6893 /* ViewController.m in Sources */,
+				438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */,
+				438F8A4721D7169800EF46DD /* Money+CoreDataProperties.m in Sources */,
 				43E2115921D5BF9200EF6893 /* RLBaseTheme.m in Sources */,
+				438F8A4A21D7393000EF46DD /* RLDataBaseUtil.m in Sources */,
 				43E2117A21D5E67F00EF6893 /* RLSettingViewController.m in Sources */,
 				43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */,
 				432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */,
@@ -517,6 +537,7 @@
 				43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */,
 				432ED1CB21D6686B00475C10 /* RLAddSpendingViewController.m in Sources */,
 				43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */,
+				438F8A3C21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,14 +573,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		43E2112621D5BD2400EF6893 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43E2112721D5BD2400EF6893 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -686,6 +699,7 @@
 			baseConfigurationReference = D5C4DE550F8A353193EC3EDA /* Pods-MoneyManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoneyManager/Header/PrefixHeader.pch";
@@ -697,6 +711,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoneyManager/Business/DataBase/MoneyManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -706,6 +723,7 @@
 			baseConfigurationReference = 7E77112E964055AC9AC055D8 /* Pods-MoneyManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoneyManager/Header/PrefixHeader.pch";
@@ -717,6 +735,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.riverli.moneyManager.MoneyManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoneyManager/Business/DataBase/MoneyManager-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -835,6 +855,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				438F8A3B21D713DF00EF46DD /* MoneyDataBase.xcdatamodel */,
+			);
+			currentVersion = 438F8A3B21D713DF00EF46DD /* MoneyDataBase.xcdatamodel */;
+			path = MoneyDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43E2111521D5BD2400EF6893 /* Project object */;
 }
