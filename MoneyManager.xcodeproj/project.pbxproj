@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2FAFA8017E9F9D6794CC1FFF /* Pods-MoneyManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40DF12E83F615DF49548CA68 /* Pods-MoneyManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyManagerUITests/Pods-MoneyManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4324113C21D784E50016B3E6 /* MoneyProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyProtocal.h; sourceTree = "<group>"; };
 		432ED1C621D6662200475C10 /* RLGlobalDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGlobalDataCenter.h; sourceTree = "<group>"; };
 		432ED1C721D6662200475C10 /* RLGlobalDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGlobalDataCenter.m; sourceTree = "<group>"; };
 		432ED1C921D6686B00475C10 /* RLAddSpendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLAddSpendingViewController.h; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 				438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */,
 				438F8A4821D7393000EF46DD /* RLDataBaseUtil.h */,
 				438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */,
+				4324113C21D784E50016B3E6 /* MoneyProtocal.h */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
