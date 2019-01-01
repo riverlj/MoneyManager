@@ -2,7 +2,7 @@
 //  Money+CoreDataProperties.m
 //  MoneyManager
 //
-//  Created by RiverLi on 2018/12/29.
+//  Created by RiverLi on 2018/12/31.
 //  Copyright © 2018年 RiverLi. All rights reserved.
 //
 //
@@ -15,11 +15,12 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Money"];
 }
 
+@dynamic comment;
+@dynamic count;
 @dynamic entityId;
 @dynamic moneyCategory;
 @dynamic moneyUseOneCategory;
 @dynamic moneyUseTwoCategory;
-@dynamic comment;
-@dynamic count;
+@dynamic updateDate;
 
 @end

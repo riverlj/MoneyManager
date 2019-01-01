@@ -10,5 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RLBaseTheme : NSObject
-+(UIColor *)backgroundColor;
++ (UIColor *)backgroundColor;
+
++ (CGFloat)screenWidth;
++ (CGFloat)screenHeight;
 @end

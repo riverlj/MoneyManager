@@ -8,6 +8,6 @@
 
 #import "RLBaseViewController.h"
 
-@interface RLSettingViewController : RLBaseViewController
+@interface RLSettingViewController : RLBaseTableViewController
 
 @end

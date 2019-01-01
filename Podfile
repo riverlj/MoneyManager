@@ -8,6 +8,7 @@ target 'MoneyManager' do
   # Pods for MoneyManager
   pod 'YYModel'
   pod 'AFNetworking', '~> 3.0'
+  pod 'Masonry'
 
   target 'MoneyManagerTests' do
     inherit! :search_paths

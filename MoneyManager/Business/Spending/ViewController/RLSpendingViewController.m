@@ -26,6 +26,7 @@
     [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
     [createButton addTarget:self action:@selector(gotoAddSpendingVc) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:createButton];
+    
 }
 
 - (void)gotoAddSpendingVc {

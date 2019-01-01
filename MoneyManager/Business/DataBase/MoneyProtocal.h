@@ -9,5 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol MoneyProtocal <NSObject>
-@property(nonatomic, copy) NSString *name;
+@property (nonatomic, assign) int16_t moneyCategory;
+@property (nonatomic, assign) int64_t moneyUseOneCategory;
+@property (nonatomic, assign) int64_t moneyUseTwoCategory;
+@property (nonatomic, copy) NSString *comment;
+@property (nonatomic, assign) double count;
+
+@property (nonatomic, copy) NSString *moneyCategoryLabel;
+@property (nonatomic, copy) NSString *moneyUseOneCategoryLabel;
+@property (nonatomic, copy) NSString *moneyUseTwoCategoryLabel;
 @end

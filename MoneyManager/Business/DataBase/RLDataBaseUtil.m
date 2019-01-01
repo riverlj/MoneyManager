@@ -10,9 +10,6 @@
 #import <CoreData/CoreData.h>
 
 @interface RLDataBaseUtil()
-@property(nonatomic, strong) NSManagedObjectContext *objectContext;
-@property(nonatomic, strong) NSManagedObjectModel *objectModel;
-@property(nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @end
 
 @implementation RLDataBaseUtil
@@ -37,6 +34,7 @@
 -(NSManagedObjectContext *)objectContext {
     if (!_objectContext) {
         _objectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        [_objectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
     }
     return _objectContext;
 }
@@ -61,8 +59,19 @@
     return _objectModel;
 }
 
-- (void)addMoney:()money {
+- (BOOL)addSpending:(id<MoneyProtocal>) saveMoney {
+    Money *money = [NSEntityDescription insertNewObjectForEntityForName:@"Money" inManagedObjectContext:[RLDataBaseUtil sharedInstance].objectContext];
+    money.count = saveMoney.count;
+    money.moneyCategory = saveMoney.moneyCategory;
+    money.moneyUseOneCategory = saveMoney.moneyUseOneCategory;
+    money.moneyUseTwoCategory = saveMoney.moneyUseTwoCategory;
+    NSTimeInterval timeInterVal = [[NSDate date] timeIntervalSince1970];
+    money.updateDate = (NSInteger)timeInterVal;
+    money.comment = saveMoney.comment;
     
+    NSError *error = nil;
+    return [[RLDataBaseUtil sharedInstance].objectContext save:&error];
 }
+
 
 @end
