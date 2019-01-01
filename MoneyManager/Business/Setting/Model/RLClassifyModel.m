@@ -7,7 +7,15 @@
 //
 
 #import "RLClassifyModel.h"
+#import "RLChooseTableViewCell.h"
 
 @implementation RLClassifyModel
+- (CGFloat)cellHeight {
+    return 44;
+}
+
+- (NSString *)cellClassName {
+    return NSStringFromClass([RLChooseTableViewCell class]);
+}
 
 @end

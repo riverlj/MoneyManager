@@ -19,4 +19,12 @@
 + (CGFloat)screenHeight {
     return UIScreen.mainScreen.bounds.size.height;
 }
+
++ (UIColor *)oneLevelTitleColor {
+    return [UIColor blackColor];
+}
+
++ (UIFont *)oneLevelTitleFont {
+    return [UIFont systemFontOfSize:14];
+}
 @end

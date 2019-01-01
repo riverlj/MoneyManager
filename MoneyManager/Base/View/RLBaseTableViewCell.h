@@ -11,5 +11,10 @@
 @interface RLBaseTableViewCell : UITableViewCell
 @property (nonatomic, strong) UIView *lineView;
 @property (nonatomic, assign) BOOL islineViewHidden;
+
 - (void)setData:(id<RLCellModel>)data;
+- (void)addSubViews;
+- (void)buildLayout;
+- (void)defineCellStyle;
+
 @end

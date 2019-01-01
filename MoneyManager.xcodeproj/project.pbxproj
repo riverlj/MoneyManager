@@ -20,6 +20,7 @@
 		432ED1EF21DB910400475C10 /* Classify.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432ED1EE21DB910400475C10 /* Classify.plist */; };
 		432ED1F121DB924C00475C10 /* SubClassify.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432ED1F021DB924C00475C10 /* SubClassify.plist */; };
 		432ED1F421DBA09500475C10 /* RLClassifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1F321DBA09500475C10 /* RLClassifyModel.m */; };
+		432ED1F721DBA32600475C10 /* RLChooseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1F621DBA32600475C10 /* RLChooseTableViewCell.m */; };
 		438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */; };
 		438F8A3C21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */; };
 		438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */; };
@@ -88,6 +89,8 @@
 		432ED1F021DB924C00475C10 /* SubClassify.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SubClassify.plist; sourceTree = "<group>"; };
 		432ED1F221DBA09500475C10 /* RLClassifyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLClassifyModel.h; sourceTree = "<group>"; };
 		432ED1F321DBA09500475C10 /* RLClassifyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLClassifyModel.m; sourceTree = "<group>"; };
+		432ED1F521DBA32600475C10 /* RLChooseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLChooseTableViewCell.h; sourceTree = "<group>"; };
+		432ED1F621DBA32600475C10 /* RLChooseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLChooseTableViewCell.m; sourceTree = "<group>"; };
 		438F8A3B21D713DF00EF46DD /* MoneyDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyDataBase.xcdatamodel; sourceTree = "<group>"; };
 		438F8A4221D7169800EF46DD /* Money+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataProperties.h"; sourceTree = "<group>"; };
 		438F8A4321D7169800EF46DD /* Money+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				432ED1E521DA5CD800475C10 /* SettingTableViewCell.h */,
 				432ED1E621DA5CD800475C10 /* SettingTableViewCell.m */,
+				432ED1F521DBA32600475C10 /* RLChooseTableViewCell.h */,
+				432ED1F621DBA32600475C10 /* RLChooseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				432ED1D621DA413D00475C10 /* RLBaseTableViewController.m in Sources */,
 				432ED1ED21DB908A00475C10 /* RLSpendingClassifyViewController.m in Sources */,
 				43E2117A21D5E67F00EF6893 /* RLSettingViewController.m in Sources */,
+				432ED1F721DBA32600475C10 /* RLChooseTableViewCell.m in Sources */,
 				43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */,
 				432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */,
 				43E2113021D5BD2600EF6893 /* main.m in Sources */,

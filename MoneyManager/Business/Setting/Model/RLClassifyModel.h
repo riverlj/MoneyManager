@@ -9,6 +9,7 @@
 #import "RLBaseCellModel.h"
 
 @interface RLClassifyModel : RLBaseCellModel
-@property (nonatomic, copy)NSString *title;
+@property (nonatomic, copy)NSString *name;
 @property (nonatomic, copy)NSString *key;
+@property (nonatomic, assign)BOOL isSelected;
 @end

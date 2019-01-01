@@ -14,13 +14,20 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
-        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        [self addSubview:self.lineView];
-        
+        [self defineCellStyle];
+        [self addSubViews];
         [self buildLayout];
     }
     return self;
+}
+
+- (void)defineCellStyle {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
+
+- (void)addSubViews {
+    [self addSubview:self.lineView];
 }
 
 - (void)buildLayout {

@@ -9,6 +9,7 @@
 #import "RLSettingViewController.h"
 #import "SettingModel.h"
 #import "SettingTableViewCell.h"
+#import "RLSpendingClassifyViewController.h"
 
 @interface RLSettingViewController ()
 
@@ -43,7 +44,8 @@
     if (indexPath.row == 0) {
         
     } else if(indexPath.row == 1) {
-        
+        RLSpendingClassifyViewController *vc = [[RLSpendingClassifyViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     } else if(indexPath.row == 2) {
         
     } else if(indexPath.row == 3) {

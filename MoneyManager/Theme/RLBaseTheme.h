@@ -10,8 +10,14 @@
 #import <UIKit/UIKit.h>
 
 @interface RLBaseTheme : NSObject
+// MARK: 颜色
 + (UIColor *)backgroundColor;
++ (UIColor *)oneLevelTitleColor;
 
+// MARK: 字体
++ (UIFont *)oneLevelTitleFont;
+
+// MARK: 尺寸
 + (CGFloat)screenWidth;
 + (CGFloat)screenHeight;
 @end
