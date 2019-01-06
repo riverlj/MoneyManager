@@ -19,20 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *createButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [createButton setTitle:@"添加" forState:UIControlStateNormal];
-    [createButton setTitle:@"添加" forState:UIControlStateHighlighted];
-    [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
-    [createButton addTarget:self action:@selector(gotoAddSpendingVc) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *createButton = [UIButton navRightAddButton:self action:@selector(gotoAddSpendingVc)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:createButton];
     
 }
 
 - (void)gotoAddSpendingVc {
     RLAddSpendingViewController *addSpendingVc = [[RLAddSpendingViewController alloc] init];
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [delegate push:addSpendingVc];
+    [MainAppdelegate push:addSpendingVc];
 }
 
 @end

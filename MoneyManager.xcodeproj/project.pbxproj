@@ -21,6 +21,12 @@
 		432ED1F121DB924C00475C10 /* SubClassify.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432ED1F021DB924C00475C10 /* SubClassify.plist */; };
 		432ED1F421DBA09500475C10 /* RLClassifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1F321DBA09500475C10 /* RLClassifyModel.m */; };
 		432ED1F721DBA32600475C10 /* RLChooseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1F621DBA32600475C10 /* RLChooseTableViewCell.m */; };
+		432ED1FC21E1E88600475C10 /* UIButton+RLButtonQuickCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1FB21E1E88600475C10 /* UIButton+RLButtonQuickCreate.m */; };
+		432ED20021E1F01400475C10 /* ClassifyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED1FF21E1F01400475C10 /* ClassifyUtil.m */; };
+		432ED20321E205D000475C10 /* RLSpendingSubClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED20221E205D000475C10 /* RLSpendingSubClassifyViewController.m */; };
+		432ED20621E2071D00475C10 /* SubClassifyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED20521E2071D00475C10 /* SubClassifyUtil.m */; };
+		432ED20921E2318E00475C10 /* RLUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED20821E2318E00475C10 /* RLUnitViewController.m */; };
+		432ED20C21E2325900475C10 /* RLUnitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432ED20B21E2325900475C10 /* RLUnitModel.m */; };
 		438042CE5D7D19B2AECFF2F1 /* libPods-MoneyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE119918A9646AAF94763CD2 /* libPods-MoneyManager.a */; };
 		438F8A3C21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A3A21D713DF00EF46DD /* MoneyDataBase.xcdatamodeld */; };
 		438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */; };
@@ -91,6 +97,18 @@
 		432ED1F321DBA09500475C10 /* RLClassifyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLClassifyModel.m; sourceTree = "<group>"; };
 		432ED1F521DBA32600475C10 /* RLChooseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLChooseTableViewCell.h; sourceTree = "<group>"; };
 		432ED1F621DBA32600475C10 /* RLChooseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLChooseTableViewCell.m; sourceTree = "<group>"; };
+		432ED1FA21E1E88600475C10 /* UIButton+RLButtonQuickCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RLButtonQuickCreate.h"; sourceTree = "<group>"; };
+		432ED1FB21E1E88600475C10 /* UIButton+RLButtonQuickCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RLButtonQuickCreate.m"; sourceTree = "<group>"; };
+		432ED1FE21E1F01400475C10 /* ClassifyUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyUtil.h; sourceTree = "<group>"; };
+		432ED1FF21E1F01400475C10 /* ClassifyUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyUtil.m; sourceTree = "<group>"; };
+		432ED20121E205D000475C10 /* RLSpendingSubClassifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSpendingSubClassifyViewController.h; sourceTree = "<group>"; };
+		432ED20221E205D000475C10 /* RLSpendingSubClassifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLSpendingSubClassifyViewController.m; sourceTree = "<group>"; };
+		432ED20421E2071D00475C10 /* SubClassifyUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubClassifyUtil.h; sourceTree = "<group>"; };
+		432ED20521E2071D00475C10 /* SubClassifyUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClassifyUtil.m; sourceTree = "<group>"; };
+		432ED20721E2318E00475C10 /* RLUnitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLUnitViewController.h; sourceTree = "<group>"; };
+		432ED20821E2318E00475C10 /* RLUnitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLUnitViewController.m; sourceTree = "<group>"; };
+		432ED20A21E2325900475C10 /* RLUnitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLUnitModel.h; sourceTree = "<group>"; };
+		432ED20B21E2325900475C10 /* RLUnitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLUnitModel.m; sourceTree = "<group>"; };
 		438F8A3B21D713DF00EF46DD /* MoneyDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyDataBase.xcdatamodel; sourceTree = "<group>"; };
 		438F8A4221D7169800EF46DD /* Money+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataProperties.h"; sourceTree = "<group>"; };
 		438F8A4321D7169800EF46DD /* Money+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -198,6 +216,8 @@
 				432ED1DA21DA57A400475C10 /* SettingModel.m */,
 				432ED1F221DBA09500475C10 /* RLClassifyModel.h */,
 				432ED1F321DBA09500475C10 /* RLClassifyModel.m */,
+				432ED20A21E2325900475C10 /* RLUnitModel.h */,
+				432ED20B21E2325900475C10 /* RLUnitModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,10 +236,31 @@
 		432ED1E121DA5A6700475C10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				432ED1F821E1E7F100475C10 /* CommonKit */,
 				432ED1E221DA5A6700475C10 /* RLBaseTableViewCell.h */,
 				432ED1E321DA5A6700475C10 /* RLBaseTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		432ED1F821E1E7F100475C10 /* CommonKit */ = {
+			isa = PBXGroup;
+			children = (
+				432ED1FA21E1E88600475C10 /* UIButton+RLButtonQuickCreate.h */,
+				432ED1FB21E1E88600475C10 /* UIButton+RLButtonQuickCreate.m */,
+			);
+			path = CommonKit;
+			sourceTree = "<group>";
+		};
+		432ED1FD21E1EFEA00475C10 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				432ED1FE21E1F01400475C10 /* ClassifyUtil.h */,
+				432ED1FF21E1F01400475C10 /* ClassifyUtil.m */,
+				432ED20421E2071D00475C10 /* SubClassifyUtil.h */,
+				432ED20521E2071D00475C10 /* SubClassifyUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		438F8A3621D712BA00EF46DD /* DataBase */ = {
@@ -362,6 +403,7 @@
 		43E2116821D5E5A900EF6893 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				432ED1FD21E1EFEA00475C10 /* Util */,
 				432ED1DC21DA57C200475C10 /* Model */,
 				432ED1DD21DA57C200475C10 /* View */,
 				43E2117121D5E5FE00EF6893 /* ViewController */,
@@ -392,10 +434,14 @@
 		43E2117121D5E5FE00EF6893 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				432ED20721E2318E00475C10 /* RLUnitViewController.h */,
+				432ED20821E2318E00475C10 /* RLUnitViewController.m */,
 				43E2117821D5E67F00EF6893 /* RLSettingViewController.h */,
 				43E2117921D5E67F00EF6893 /* RLSettingViewController.m */,
 				432ED1EB21DB908A00475C10 /* RLSpendingClassifyViewController.h */,
 				432ED1EC21DB908A00475C10 /* RLSpendingClassifyViewController.m */,
+				432ED20121E205D000475C10 /* RLSpendingSubClassifyViewController.h */,
+				432ED20221E205D000475C10 /* RLSpendingSubClassifyViewController.m */,
 				432ED1EE21DB910400475C10 /* Classify.plist */,
 				432ED1F021DB924C00475C10 /* SubClassify.plist */,
 			);
@@ -617,13 +663,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432ED20921E2318E00475C10 /* RLUnitViewController.m in Sources */,
 				43E2116421D5C58500EF6893 /* RLBaseTabBarController.m in Sources */,
+				432ED20021E1F01400475C10 /* ClassifyUtil.m in Sources */,
 				43E2115E21D5C4D200EF6893 /* RLBaseNavigationController.m in Sources */,
 				43E2117421D5E64F00EF6893 /* RLSpendingViewController.m in Sources */,
 				432ED1D321DA1FBD00475C10 /* SpendingModel.m in Sources */,
+				432ED20321E205D000475C10 /* RLSpendingSubClassifyViewController.m in Sources */,
 				432ED1E421DA5A6800475C10 /* RLBaseTableViewCell.m in Sources */,
+				432ED1FC21E1E88600475C10 /* UIButton+RLButtonQuickCreate.m in Sources */,
 				438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */,
 				438F8A4721D7169800EF46DD /* Money+CoreDataProperties.m in Sources */,
+				432ED20621E2071D00475C10 /* SubClassifyUtil.m in Sources */,
 				43E2115921D5BF9200EF6893 /* RLBaseTheme.m in Sources */,
 				438F8A4A21D7393000EF46DD /* RLDataBaseUtil.m in Sources */,
 				432ED1F421DBA09500475C10 /* RLClassifyModel.m in Sources */,
@@ -634,6 +685,7 @@
 				43E2115421D5BF2A00EF6893 /* RLBaseViewController.m in Sources */,
 				432ED1C821D6662200475C10 /* RLGlobalDataCenter.m in Sources */,
 				43E2113021D5BD2600EF6893 /* main.m in Sources */,
+				432ED20C21E2325900475C10 /* RLUnitModel.m in Sources */,
 				432ED1DB21DA57A400475C10 /* SettingModel.m in Sources */,
 				43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */,
 				432ED1D021D9F31E00475C10 /* BaseSpendingTableViewCell.m in Sources */,

@@ -18,4 +18,11 @@ static RLGlobalDataCenter *dataCenter;
     return dataCenter;
 }
 
+- (NSString *)unit {
+    _unit = [[NSUserDefaults standardUserDefaults] valueForKey:@"k_default_unit"];
+    if (!_unit) {
+        _unit = @"元";
+    }
+    return _unit;
+}
 @end

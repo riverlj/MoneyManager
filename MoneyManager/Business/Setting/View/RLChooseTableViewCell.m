@@ -8,7 +8,7 @@
 
 #import "RLChooseTableViewCell.h"
 #import "RLClassifyModel.h"
-
+#import "RLUnitModel.h"
 @interface RLChooseTableViewCell()
 @property (nonatomic, strong)UILabel *titleLabel;
 @property (nonatomic, strong)UIImageView *chooseImageView;
@@ -43,9 +43,16 @@
 }
 
 - (void)setData:(id<RLCellModel>)data {
-    RLClassifyModel *model = data;
-    self.titleLabel.text = model.name;
-    self.chooseImageView.hidden = !model.isSelected;
+    if ([data isKindOfClass:[RLClassifyModel class]]) {
+        RLClassifyModel *model = data;
+        self.titleLabel.text = model.name;
+        self.chooseImageView.hidden = NO;
+    } else if([data isKindOfClass:[RLUnitModel class]]) {
+        RLUnitModel *model = data;
+        self.titleLabel.text = model.title;
+        self.chooseImageView.hidden = !model.isSelected;
+    }
+    
 }
 
 - (UIImageView *)chooseImageView {

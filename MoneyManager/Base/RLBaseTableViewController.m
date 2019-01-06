@@ -9,7 +9,7 @@
 #import "RLBaseTableViewController.h"
 #import "RLBaseTableViewCell.h"
 
-@interface RLBaseTableViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface RLBaseTableViewController ()
 @property (nonatomic, strong) UIView *footerView;
 @end
 

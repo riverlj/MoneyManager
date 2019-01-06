@@ -8,6 +8,11 @@
 
 #import "RLBaseTableViewController.h"
 
+typedef enum : NSUInteger {
+    SPENDING_CLASSIFY_LEVEL_ONE,
+    SPENDING_CLASSIFY_LEVEL_TWO,
+} SPENDING_CLASSIFY_LEVEL;
+
 @interface RLSpendingClassifyViewController : RLBaseTableViewController
 
 @end

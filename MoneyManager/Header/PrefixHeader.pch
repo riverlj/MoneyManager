@@ -16,9 +16,14 @@
 #import "RLBaseTableViewController.h"
 
 #import "RLCellModel.h"
+#import "UIButton+RLButtonQuickCreate.h"
 
 // MARK: 第三方库
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
 #import <AFNetworking/AFNetworking.h>
+#import <SCLAlertView-Objective-C/SCLAlertView.h>
+
+#import "AppDelegate.h"
+#define MainAppdelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 #endif /* PrefixHeader_pch */

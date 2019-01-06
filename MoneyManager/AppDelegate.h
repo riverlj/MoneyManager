@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RLBaseNavigationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) RLBaseNavigationController *currentNav;
 
 - (void)push:(UIViewController *)vc;
 - (void)pop;

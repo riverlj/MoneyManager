@@ -18,5 +18,9 @@
     [super viewDidLoad];
 }
 
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    UIViewController *vc = [self.viewControllers objectAtIndex: [tabBar.items indexOfObject:item]];
+    MainAppdelegate.currentNav = (RLBaseNavigationController *)vc;
+}
 
 @end

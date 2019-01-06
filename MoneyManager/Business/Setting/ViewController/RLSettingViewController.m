@@ -10,6 +10,7 @@
 #import "SettingModel.h"
 #import "SettingTableViewCell.h"
 #import "RLSpendingClassifyViewController.h"
+#import "RLUnitViewController.h"
 
 @interface RLSettingViewController ()
 
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self buildDataSource];
     self.tableView.scrollEnabled = NO;
 }
@@ -42,10 +44,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        
+        RLUnitViewController *vc = [[RLUnitViewController alloc] init];
+        [MainAppdelegate push:vc];
     } else if(indexPath.row == 1) {
         RLSpendingClassifyViewController *vc = [[RLSpendingClassifyViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        [MainAppdelegate push:vc];
     } else if(indexPath.row == 2) {
         
     } else if(indexPath.row == 3) {

@@ -15,24 +15,28 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - SCLAlertView-Objective-C (1.1.5)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Masonry
+  - SCLAlertView-Objective-C
   - YYModel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Masonry
+    - SCLAlertView-Objective-C
     - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SCLAlertView-Objective-C: 69c8932c332ce61ee9e693379451e2c0b09fb307
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9ed28c7cedfcfdd24e252efd6b3c7212670fda18
+PODFILE CHECKSUM: 27d57836016b2cf29ff05aa6cf6809703b8f6dc3
 
 COCOAPODS: 1.5.3

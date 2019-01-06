@@ -8,13 +8,13 @@
 
 #import "AppDelegate.h"
 #import "RLBaseTabBarController.h"
-#import "RLBaseNavigationController.h"
 #import "RLIncomeViewController.h"
 #import "RLSpendingViewController.h"
 #import "RLSettingViewController.h"
+#import "ClassifyUtil.h"
+#import "SubClassifyUtil.h"
 
 @interface AppDelegate ()
-@property (nonatomic, strong) RLBaseNavigationController *currentNav;
 @end
 
 @implementation AppDelegate
@@ -26,7 +26,8 @@
     self.window.backgroundColor = [RLBaseTheme backgroundColor];
     self.window.rootViewController = [self createRootVc];
     [self.window makeKeyAndVisible];
-    [RLGlobalDataCenter instanceGlobalDataCenter].unit = @"元";
+    [ClassifyUtil initClassify];
+    [SubClassifyUtil initSubClassify];
     return YES;
 }
 

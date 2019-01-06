@@ -9,6 +9,7 @@ target 'MoneyManager' do
   pod 'YYModel'
   pod 'AFNetworking', '~> 3.0'
   pod 'Masonry'
+  pod 'SCLAlertView-Objective-C'
 
   target 'MoneyManagerTests' do
     inherit! :search_paths

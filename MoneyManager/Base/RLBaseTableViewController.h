@@ -9,7 +9,7 @@
 #import "RLBaseViewController.h"
 #import "RLCellModel.h"
 
-@interface RLBaseTableViewController : RLBaseViewController
+@interface RLBaseTableViewController : RLBaseViewController<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)NSArray<id<RLCellModel>> *tableViewDataSource;
 @property (nonatomic, copy) UITableView *tableView;
 
