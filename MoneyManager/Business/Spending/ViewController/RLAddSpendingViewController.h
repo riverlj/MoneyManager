@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "RLBaseViewController.h"
+#import "RLBaseTableViewController.h"
 
-@interface RLAddSpendingViewController : RLBaseViewController
+@interface RLAddSpendingViewController : RLBaseTableViewController
 
 @end

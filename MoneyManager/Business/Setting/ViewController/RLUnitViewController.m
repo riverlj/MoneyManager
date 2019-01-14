@@ -20,7 +20,7 @@
     [super viewDidLoad];
     [self initDataSource];
 }
-
+      
 - (void)initDataSource {
     NSString *unit = [RLGlobalDataCenter instanceGlobalDataCenter].unit;
     

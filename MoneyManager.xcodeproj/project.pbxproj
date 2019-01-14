@@ -32,6 +32,7 @@
 		438F8A4621D7169800EF46DD /* Money+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4421D7169800EF46DD /* Money+CoreDataClass.m */; };
 		438F8A4721D7169800EF46DD /* Money+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4521D7169800EF46DD /* Money+CoreDataProperties.m */; };
 		438F8A4A21D7393000EF46DD /* RLDataBaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */; };
+		43C969AC21ECC25400B697FA /* SpendingMoneyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C969AB21ECC25400B697FA /* SpendingMoneyTableViewCell.m */; };
 		43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2112121D5BD2400EF6893 /* AppDelegate.m */; };
 		43E2112A21D5BD2600EF6893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112921D5BD2600EF6893 /* Assets.xcassets */; };
 		43E2112D21D5BD2600EF6893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E2112B21D5BD2600EF6893 /* LaunchScreen.storyboard */; };
@@ -116,6 +117,8 @@
 		438F8A4521D7169800EF46DD /* Money+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Money+CoreDataProperties.m"; sourceTree = "<group>"; };
 		438F8A4821D7393000EF46DD /* RLDataBaseUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLDataBaseUtil.h; sourceTree = "<group>"; };
 		438F8A4921D7393000EF46DD /* RLDataBaseUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLDataBaseUtil.m; sourceTree = "<group>"; };
+		43C969AA21ECC25400B697FA /* SpendingMoneyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpendingMoneyTableViewCell.h; sourceTree = "<group>"; };
+		43C969AB21ECC25400B697FA /* SpendingMoneyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpendingMoneyTableViewCell.m; sourceTree = "<group>"; };
 		43E2111D21D5BD2400EF6893 /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E2112021D5BD2400EF6893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43E2112121D5BD2400EF6893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 			children = (
 				432ED1CE21D9F31E00475C10 /* BaseSpendingTableViewCell.h */,
 				432ED1CF21D9F31E00475C10 /* BaseSpendingTableViewCell.m */,
+				43C969AA21ECC25400B697FA /* SpendingMoneyTableViewCell.h */,
+				43C969AB21ECC25400B697FA /* SpendingMoneyTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -689,6 +694,7 @@
 				432ED1DB21DA57A400475C10 /* SettingModel.m in Sources */,
 				43E2117721D5E66D00EF6893 /* RLIncomeViewController.m in Sources */,
 				432ED1D021D9F31E00475C10 /* BaseSpendingTableViewCell.m in Sources */,
+				43C969AC21ECC25400B697FA /* SpendingMoneyTableViewCell.m in Sources */,
 				432ED1CB21D6686B00475C10 /* RLAddSpendingViewController.m in Sources */,
 				432ED1EA21DB896E00475C10 /* RLBaseCellModel.m in Sources */,
 				43E2112221D5BD2400EF6893 /* AppDelegate.m in Sources */,

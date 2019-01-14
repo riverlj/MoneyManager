@@ -7,18 +7,16 @@
 //
 
 #import "RLAddSpendingViewController.h"
-#import "BaseSpendingTableViewCell.h"
 #import "RLDataBaseUtil.h"
 #import <CoreData/CoreData.h>
 #import "Money+CoreDataProperties.h"
+#import "SpendingMoneyTableViewCell.h"
+#import "SpendingModel.h"
 
 #define K_IDENTIFIER_BaseSpendingTableViewCell  @"K_IDENTIFIER_BaseSpendingTableViewCell"
 
 @interface RLAddSpendingViewController()<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) BaseSpendingTableViewCell *amountCell;
-@property (nonatomic, strong) BaseSpendingTableViewCell *categoryCell;
-@property (nonatomic, copy) UITableView *tableView;
-@property (nonatomic, strong) UIButton *saveButton;
+   @property (nonatomic, strong) UIButton *saveButton;
 @property (nonatomic, strong) UIView *footerView;
 @end
 
@@ -28,54 +26,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"增加一笔支出";
-    [self.view addSubview:self.tableView];
-    [self registerCell];
-    self.tableView.tableFooterView = self.footerView;
+    [self initData];
+    [self.tableView reloadData];
 }
 
-- (void)registerCell {
-    [self.tableView registerClass:[BaseSpendingTableViewCell class] forCellReuseIdentifier:K_IDENTIFIER_BaseSpendingTableViewCell];
+- (void)initData {
+    SpendingModel *spendingModel = [[SpendingModel alloc] init];
+    spendingModel.cellHeight = 44;
+    spendingModel.cellClassName = NSStringFromClass([SpendingMoneyTableViewCell class]);
+    self.tableViewDataSource = [[[NSMutableArray alloc] initWithObjects:spendingModel, nil] copy];
 }
 
-- (UITableView *)tableView {
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, RLBaseTheme.screenWidth, RLBaseTheme.screenHeight) style:UITableViewStylePlain];
-        _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.showsHorizontalScrollIndicator = NO;
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableFooterView = [UIView new];
-    }
-    return _tableView;
+- (void)registerCells {
+    [self.tableView registerClass:[SpendingMoneyTableViewCell class] forCellReuseIdentifier:NSStringFromClass([SpendingMoneyTableViewCell class])];
 }
 
-
-//MARK: tableViewDelegate & tableViewDatasource
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 54;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:K_IDENTIFIER_BaseSpendingTableViewCell];
-    if (indexPath.row == 0) {
-        BaseSpendingTableViewCell *spendingCell = (BaseSpendingTableViewCell *)cell;
-        [spendingCell setTitle:@"金额" detail:@"25元"];
-        return spendingCell;
-    } else if (indexPath.row == 1) {
-        BaseSpendingTableViewCell *spendingCell = (BaseSpendingTableViewCell *)cell;
-        [spendingCell setTitle:@"用途" detail:@"餐饮_午餐"];
-        return spendingCell;
-    }
-    return [UITableViewCell new];
+    return [super tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
 - (UIView *)footerView {
